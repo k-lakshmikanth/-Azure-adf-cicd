@@ -3,10 +3,12 @@ name: Deploy Ingestion ADF
 run-name: Deploy Ingestion ADF
 
 on:
-  push:
-    branches:
-      - adf_publish
+
   workflow_dispatch:
+  
+  pull_request:
+    types: [closed]
+    branches: [test]
     
 jobs:
   build_ARM_templates:
