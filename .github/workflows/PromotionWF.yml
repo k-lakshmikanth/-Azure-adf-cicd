@@ -1,24 +1,8 @@
 name: Deploy Ingestion ADF
-
 run-name: Deploy Ingestion ADF
 
 on:
-  workflow_dispatch:
-    inputs:
-      name:
-        type: choice
-        description: Who to greet
-        options: 
-        - monalisa
-        - cschleiden
-      message:
-        required: true
-      use-emoji:
-        type: boolean
-        description: Include 🎉🤣 emojis
-      environment:
-        type: environment
-  
+  workflow_dispatch: 
   pull_request:
     types: [closed]
     branches: [test]
