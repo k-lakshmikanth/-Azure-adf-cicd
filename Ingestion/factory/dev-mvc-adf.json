@@ -1,0 +1,9 @@
+{
+	"name": "dev-mvc-adf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e7866bd6-d49e-4b8c-8c34-4ea4643d1791",
+		"tenantId": "83f1e4bf-6250-46ba-9d55-4fc1c00efb85"
+	}
+}
