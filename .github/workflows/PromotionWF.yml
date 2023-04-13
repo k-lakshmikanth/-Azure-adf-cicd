@@ -1,11 +1,8 @@
 name: Deploy Ingestion ADF
-
 run-name: Deploy Ingestion ADF
 
 on:
-
-  workflow_dispatch:
-  
+  workflow_dispatch: 
   pull_request:
     types: [closed]
     branches: [test]
