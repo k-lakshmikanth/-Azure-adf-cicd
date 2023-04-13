@@ -1,5 +1,13 @@
 {
 	"name": "dev-mvc-adf",
+	"properties": {
+		"globalParameters": {
+			"global_param1": {
+				"type": "string",
+				"value": "hello"
+			}
+		}
+	},
 	"location": "eastus",
 	"identity": {
 		"type": "SystemAssigned",
