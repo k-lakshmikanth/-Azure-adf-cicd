@@ -6,10 +6,16 @@
             "value": "test-mvc-adf"
         },
         "LS_AZURE_SQL_DB_connectionString": {
-            "value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=lksql2.database.windows.net;Initial Catalog=test"
+            "value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=mvc-test-sqlserver.database.windows.net;Initial Catalog=test;User ID=sqladmintest"
         },
         "LS_ADLS_properties_typeProperties_url": {
             "value": "https://devadlsmvc.dfs.core.windows.net/"
+        },
+        "DevKV_properties_typeProperties_baseUrl": {
+            "value": "https://test-mvc-kv.vault.azure.net/"
+        },
+        "default_properties_global_param1_value": {
+            "value": "hello"
         }
     }
 }
