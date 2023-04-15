@@ -1,11 +1,19 @@
 {
 	"name": "LS_AZURE_SQL_DB",
-	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"annotations": [],
 		"type": "AzureSqlDatabase",
 		"typeProperties": {
-			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=lksql.database.windows.net;Initial Catalog=dev"
+			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=mvc-sqlserver.database.windows.net;Initial Catalog=dev;User ID=sqladmin",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "az_kv",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sqlpassword"
+			}
 		}
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/linkedservices"
 }
