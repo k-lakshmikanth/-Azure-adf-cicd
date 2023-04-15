@@ -1,0 +1,10 @@
+{
+	"name": "DevKV",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://dev-mvc-kv.vault.azure.net/"
+		}
+	}
+}
