@@ -8,7 +8,7 @@
 			"password": {
 				"type": "AzureKeyVaultSecret",
 				"store": {
-					"referenceName": "DevKV",
+					"referenceName": "az_kv",
 					"type": "LinkedServiceReference"
 				},
 				"secretName": "sqlpassword"
