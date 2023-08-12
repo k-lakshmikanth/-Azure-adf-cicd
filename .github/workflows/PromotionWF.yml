@@ -42,7 +42,7 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1.4.6
         with:
-          creds: '{"clientId": "258fc8fd-dba1-498f-a587-e6a562fc1175","clientSecret": "SjS8Q~Ke7E5l7WO.oantmgrKDhjTgDIR.SBkUdk7","subscriptionId": "0b23516f-bb48-4905-98eb-2a781eb50d8d","tenantId": "841d5291-c0fb-4516-8fca-f429875be39d"}'
+          creds: '{"clientId": "258fc8fd-dba1-498f-a587-e6a562fc1175","clientSecret": ${{ secrets.clientSecret}},"subscriptionId": "0b23516f-bb48-4905-98eb-2a781eb50d8d","tenantId": "841d5291-c0fb-4516-8fca-f429875be39d"}'
           enable-AzPSSession: true
           # allow-no-subscriptions: true
 
@@ -55,8 +55,8 @@ jobs:
       - name: Deploy to TEST
         uses: Azure/data-factory-deploy-action@v1.2.0
         with:
-          resourceGroupName: mvc-cicd  # ${{ secrets.TEST_INGESTION_ADF_RESOURCE_GROUP_NAME}}
-          dataFactoryName: tst-mvc-adf # ${{ secrets.TEST_INGESTION_DATA_FACTORY_NAME}}
+          resourceGroupName: ${{ secrets.TEST_INGESTION_ADF_RESOURCE_GROUP_NAME}}
+          dataFactoryName: ${{ secrets.TEST_INGESTION_DATA_FACTORY_NAME}}
           armTemplateFile: ./armtemplates/ARMTemplateForFactory.json
           armTemplateParametersFile: ./TEST-ARMTemplateParametersForFactory.json
 
