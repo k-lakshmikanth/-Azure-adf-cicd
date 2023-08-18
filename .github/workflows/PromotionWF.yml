@@ -59,5 +59,6 @@ jobs:
           dataFactoryName: tst-mvc-adf #${{ secrets.TEST_INGESTION_DATA_FACTORY_NAME}}
           armTemplateFile: ./armtemplates/ARMTemplateForFactory.json
           armTemplateParametersFile: ./TEST-ARMTemplateParametersForFactory.json
+          failOnStdErr: false
 
 ################### End of workflow file ###################
