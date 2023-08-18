@@ -6,6 +6,9 @@ on:
   pull_request:
     types: [closed]
     branches: [test]
+  push:
+    branches:
+      - Development
     
 jobs:
   build_ARM_templates:
