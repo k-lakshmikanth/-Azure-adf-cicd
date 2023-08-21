@@ -45,7 +45,7 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1.4.6
         with:
-          creds: '{"clientId": "783b2059-b713-43c6-b86f-f670de79ae0f","clientSecret": "M328Q~WUFNZSHyMX8VckkoXQ3QUI34ZJfiVtGcjg","subscriptionId": "2bcf5e1a-2a28-4ce2-8082-e04bec437ea0","tenantId": "c12aba17-76aa-43ae-a98e-54302f617a40"}'
+          creds: ${{ secrets.TEST_SPN_KEY_CREDENTIALS_JSON }}
           enable-AzPSSession: true
           # allow-no-subscriptions: true
 
