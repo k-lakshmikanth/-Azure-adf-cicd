@@ -1,5 +1,13 @@
 {
 	"name": "dev-mvc-adf",
+	"properties": {
+		"globalParameters": {
+			"lk_temp_val": {
+				"type": "string",
+				"value": "1234"
+			}
+		}
+	},
 	"location": "australiaeast",
 	"identity": {
 		"type": "SystemAssigned",
