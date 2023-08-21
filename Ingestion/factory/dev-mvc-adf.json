@@ -3,8 +3,8 @@
 	"properties": {
 		"globalParameters": {
 			"lk_temp_val": {
-				"type": "string",
-				"value": "1234"
+				"type": "int",
+				"value": 10
 			}
 		}
 	},
