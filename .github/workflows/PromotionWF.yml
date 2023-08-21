@@ -6,9 +6,9 @@ on:
   pull_request:
     types: [closed]
     branches: [test]
-  # push:
-  #   branches:
-  #     - Development
+   push:
+     branches:
+       - Development
     
 jobs:
   build_ARM_templates:
@@ -23,7 +23,7 @@ jobs:
         uses: Azure/data-factory-export-action@v1.2.0
         with:
           path: Ingestion
-#           id: /subscriptions/14408b8c-b4a0-4817-8fbc-31a52b9b9399/resourceGroups/CI-CD/providers/Microsoft.DataFactory/factories/dev-mvc-adf
+          id: /subscriptions/2bcf5e1a-2a28-4ce2-8082-e04bec437ea0/resourceGroups/mvc-cicd/providers/Microsoft.DataFactory/factories/dev-mvc-adf
 
       - name: Upload ARM templates artifact
         uses: actions/upload-artifact@v3.1.1
