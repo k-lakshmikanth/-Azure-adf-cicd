@@ -13,9 +13,6 @@
 		},
 		"az_kv_properties_typeProperties_baseUrl": {
 			"value": "https://dev-mvc-kv.vault.azure.net/"
-		},
-		"default_properties_global_param1_value": {
-			"value": "hello"
 		}
 	}
 }

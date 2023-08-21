@@ -20,10 +20,6 @@
 			"type": "string",
 			"defaultValue": "https://dev-mvc-kv.vault.azure.net/"
 		},
-		"default_properties_global_param1_value": {
-			"type": "string",
-			"defaultValue": "hello"
-		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -53,9 +49,6 @@
 					},
 					"LS_AZURE_SQL_DB_connectionString": {
 						"value": "[parameters('LS_AZURE_SQL_DB_connectionString')]"
-					},
-					"default_properties_global_param1_value": {
-						"value": "[parameters('default_properties_global_param1_value')]"
 					},
 					"LS_ADLS_properties_typeProperties_url": {
 						"value": "[parameters('LS_ADLS_properties_typeProperties_url')]"

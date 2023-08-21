@@ -1,6 +1,6 @@
 {
-	"global_param1": {
+	"lk_temp_val": {
 		"type": "string",
-		"value": "hello"
+		"value": "1234"
 	}
 }
