@@ -6,7 +6,7 @@ on:
   pull_request:
     types: [closed]
     branches: [test]
-   push:
+  push:
      branches:
        - Development
     
