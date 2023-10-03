@@ -6,9 +6,9 @@ on:
   pull_request:
     types: [closed]
     branches: [test]
-  push:
-     branches:
-       - Development
+  # push:
+  #    branches:
+  #      - Development
     
 jobs:
   build_ARM_templates:
@@ -46,6 +46,13 @@ jobs:
         uses: azure/login@v1.4.6
         with:
           creds: ${{ secrets.TEST_SPN_KEY_CREDENTIALS_JSON }}
+                # {
+                # "clientId": "<<the SPN's clientID or ApplicationID>>",
+                # "clientSecret": "<<the SPN's key value, obtained from SPN management portal>>",
+                # "subscriptionId": "<<the subscription ID of the SPN's Azure subscription>>",
+                # "tenantId": "<<the Azure directory/teneant ID where the SPN resides in>>",
+                # "resourceManagerEndpointUrl": "https://management.azure.com/"
+                # }
           enable-AzPSSession: true
           # allow-no-subscriptions: true
 
