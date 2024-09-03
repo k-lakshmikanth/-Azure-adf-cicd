@@ -57,7 +57,7 @@ jobs:
           # allow-no-subscriptions: true
 
       - name: Download ARM templates artifact
-        uses: actions/download-artifact@v3.0.1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: armtemplates
           path: armtemplates
